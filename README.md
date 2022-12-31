@@ -4,7 +4,7 @@ As you may or may not know, Cebix forgot to include some useful tools in his pac
 
 WINDOW.BIN (several graphics, game font and VFW)
 
-OPENING.BIN (SQUARESOFT logo at the beggining)
+OPENING.BIN (several logotypes and initial credits)
 
 STAFF2.BIN (ending credits)
 
