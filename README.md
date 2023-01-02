@@ -1,6 +1,6 @@
 # ff7tools-to-update-some-headers
 
-As you may or may not know, Cebix forgot to include some useful tools in his packages (https://github.com/cebix/ff7tools). To be more specific, they allow to decompress these files:
+As you may or may not know, Cebix forgot to include some useful tools in his files (https://github.com/cebix/ff7tools). To be more specific, they allow to decompress these files:
 
 - WINDOW.BIN (several graphics, game font and VFW)
 
