@@ -8,6 +8,8 @@ OPENING.BIN (several logotypes and initial credits)
 
 STAFF2.BIN (ending credits)
 
+CO.BIN (Battle Square roulette images)
+
 But they do not offer a tool to automatically update the headers once you recompress the files. I programmed some tools in Python 3 to get the job done.
 
 Regards!
