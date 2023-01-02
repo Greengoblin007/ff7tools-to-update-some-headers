@@ -2,13 +2,13 @@
 
 As you may or may not know, Cebix forgot to include some useful tools in his packages (https://github.com/cebix/ff7tools). To be more specific, they allow to decompress these files:
 
-WINDOW.BIN (several graphics, game font and VFW)
+- WINDOW.BIN (several graphics, game font and VFW)
 
-OPENING.BIN (several logotypes and initial credits)
+- OPENING.BIN (several logotypes and initial credits)
 
-STAFF2.BIN (ending credits)
+- STAFF2.BIN (ending credits)
 
-CO.BIN (Battle Square roulette images)
+- CO.BIN (Battle Square roulette images)
 
 But they do not offer a tool to automatically update the headers once you recompress the files. I programmed some tools in Python 3 to get the job done.
 
