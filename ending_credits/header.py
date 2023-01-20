@@ -27,7 +27,7 @@ for filename in os.listdir(path):
             # Offset
             filesize_total += file_size
 
-            # Show it as a hex string (little-endian)
+            # Show it as an hex string (little-endian)
             little_endian = filesize_total.to_bytes(4, 'little').hex().upper()
 
             print (little_endian)
@@ -51,3 +51,5 @@ with open('HEADER.BIN', 'rb') as f:
 
     # Close the file
     f.close()
+    
+# End of file
