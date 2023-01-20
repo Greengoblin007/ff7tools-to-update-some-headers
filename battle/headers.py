@@ -16,7 +16,7 @@ f.seek(0)
 # Get the size of compressed file 1_0 in bytes
 compressed_file_10_size = os.path.getsize("CO_1_0.GZ")
 
-# Show it as a hex string (little-endian)
+# Show it as an hex string (little-endian)
 compressed_little_endian_10 = compressed_file_10_size.to_bytes(2, 'little').hex().upper()
 
 # Write to the file
@@ -27,7 +27,7 @@ f.write(binascii.unhexlify(compressed_little_endian_10))
 # Get the size of uncompressed file 1_0 in bytes
 uncompressed_file_10_size = os.path.getsize("CO_1_0.data")
 
-# Show it as a hex string (little-endian)
+# Show it as an hex string (little-endian)
 uncompressed_little_endian_10 = uncompressed_file_10_size.to_bytes(2, 'little').hex().upper()
 
 # Write to the file
@@ -54,7 +54,7 @@ f.seek(0)
 # Get the size of compressed file 0_0 in bytes
 compressed_file_00_size = os.path.getsize("CO_0_0.GZ")
 
-# Show it as a hex string (little-endian)
+# Show it as an hex string (little-endian)
 compressed_little_endian_00 = compressed_file_00_size.to_bytes(2, 'little').hex().upper()
 
 # Write to the file
@@ -65,7 +65,7 @@ f.write(binascii.unhexlify(compressed_little_endian_00))
 # Get the size of uncompressed file 0_0 in bytes
 uncompressed_file_00_size = os.path.getsize("CO_0_0.data")
 
-# Show it as a hex string (little-endian)
+# Show it as an hex string (little-endian)
 uncompressed_little_endian_00 = uncompressed_file_00_size.to_bytes(2, 'little').hex().upper()
 
 # Write to the file
