@@ -10,6 +10,6 @@ As you may or may not know, Cebix forgot to include some useful tools in his fil
 
 - CO.BIN (Battle Square roulette images)
 
-But they do not offer a tool to automatically update the headers once you recompress the files. I programmed some tools in Python 3 to get the job done. I also included scripts to allow the 4-byte alignment necessary in some PSX files.
+However, they do not offer a tool to automatically update the headers once you recompress the files. I programmed some tools in Python 3 to get the job done. I also included scripts to ensure the 4-byte alignment when necessary.
 
 Regards!
