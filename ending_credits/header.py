@@ -29,7 +29,6 @@ for filename in os.listdir(path):
 
             # Show it as an hex string (little-endian)
             little_endian = initial_offset.to_bytes(4, 'little').hex().upper()
-            print (little_endian)
 
             with open('HEADER.BIN', 'ab') as f:
                 f.write(binascii.unhexlify(little_endian))
