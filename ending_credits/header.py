@@ -14,7 +14,7 @@ f.seek(0)
 # Write to the file
 f.write(binascii.unhexlify('BC000000'))
 
-filesize_total = 188
+initial_offset = 0xBC
 
 path = os.getcwd() # current directory
 for filename in os.listdir(path):
@@ -25,11 +25,10 @@ for filename in os.listdir(path):
             file_size = os.path.getsize(filename)
             
             # Offset
-            filesize_total += file_size
+            initial_offset += file_size
 
             # Show it as an hex string (little-endian)
-            little_endian = filesize_total.to_bytes(4, 'little').hex().upper()
-
+            little_endian = initial_offset.to_bytes(4, 'little').hex().upper()
             print (little_endian)
 
             with open('HEADER.BIN', 'ab') as f:
@@ -51,5 +50,5 @@ with open('HEADER.BIN', 'rb') as f:
 
     # Close the file
     f.close()
-    
+
 # End of file
