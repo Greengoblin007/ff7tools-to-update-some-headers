@@ -3,8 +3,10 @@
 import os
 
 path = os.getcwd() # current directory
-for filename in os.listdir(path):
-    if filename.endswith(".LZS"):
+for filename in os.listdir(path): # all files in current directory
+    if filename.endswith(".LZS"): # only .LZS files
+
+        # Open the file in read binary mode
         with open(filename, 'rb') as f:
 
             # Read the entire file into memory
@@ -19,7 +21,7 @@ for filename in os.listdir(path):
             # Add padding to the end of the data to ensure 4-byte alignment
             data += b'\x00' * alignment
 
-            # Write the aligned data back to the file
+            # Write the aligned data back to the file (write binary mode)
             with open(filename, 'wb') as f:
                 f.write(data)
 
