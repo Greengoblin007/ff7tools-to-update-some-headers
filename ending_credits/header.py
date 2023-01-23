@@ -14,6 +14,8 @@ f.seek(0)
 # Write to the file
 f.write(binascii.unhexlify('BC000000'))
 
+########## Insert remaining offsets ##########
+
 # Set initial offset
 initial_offset = 0xBC
 
@@ -27,7 +29,7 @@ for filename in os.listdir(path): # all files in current directory
             # Get the size of file in bytes
             file_size = os.path.getsize(filename)
             
-            # Offset
+            # Calculate offset
             initial_offset += file_size
 
             # Show it as an hex string (little-endian)
